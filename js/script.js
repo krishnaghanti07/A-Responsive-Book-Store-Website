@@ -33,3 +33,26 @@ window.onload = () => {
         document.querySelector('.header .header-2').classList.remove('active') ;     
     }
 }
+
+var swiper = new Swiper(".books-slider", {
+    loop: true ,
+    centeredSlides: true ,
+    autoplay: {
+        delay: 9500 ,
+        disableOnInteraction: false ,
+    } ,
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        // spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 1,
+        // spaceBetween: 20,
+      },
+      1024: {
+        slidesPerView: 1,
+        // spaceBetween: 20,
+      },
+    },
+  });

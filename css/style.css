@@ -42,6 +42,10 @@ html::-webkit-scrollbar-thumb{
     background: var(--black);
 }
 
+section{
+    padding: 5rem 9%;
+}
+
 .btn{
     margin-top: 1rem;
     display: inline-block;
@@ -257,6 +261,87 @@ html::-webkit-scrollbar-thumb{
     cursor: pointer;
 }
 
+.home{
+    background: url(../image/banner-bg-2.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .row{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;      
+}
+
+.home .row .content{
+    flex: 1 1 50rem;
+}
+
+.home .row .books-slider{
+    flex: 1 1 32rem;   /* Need To Adjust */
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.home .row .books-slider #wrappy{
+    /* display: flex;
+    justify-content: space-evenly; */
+    position: relative;
+}
+
+.home .row .books-slider a{
+    /* margin-inline: 10px; */
+    /* margin-block: 7%; */
+    /* margin: 10px; */
+}
+
+.home .row .books-slider a img{
+    height: 35rem;
+    border-radius: .9rem 0 0 .9rem;
+    box-shadow: -10px 10px 5px rgba(74, 73, 73, 0.737);
+    /* gap: 20px; */
+}
+
+.home .row .books-slider a:hover img{
+    transform: scale(0.9);
+}
+
+/* .home .row .books-slider .stand{
+    width: 140%;
+    margin-top: -11.3rem;
+    margin-left: -10rem;
+} */
+
+.home .row .books-slider .stand{  /* Add Media Query For This ... */
+    width: 100%;
+    margin-top: -2rem;
+    /* position: static; */
+    margin-left: -2rem;
+}
+
+.home .row .content h3{
+    color: var(--black);
+    font-size: 4.5rem;
+}
+
+.home .row .content p{
+    color: var(--light-color);
+    font-size: 1.5rem;
+    line-height: 2;
+    padding: 1rem 0;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -293,6 +378,10 @@ html::-webkit-scrollbar-thumb{
 
     .header .header-1{
         padding: 2rem;
+    }
+
+    section{
+        padding: 3rem 2rem;
     }
 
 }
@@ -333,6 +422,20 @@ html::-webkit-scrollbar-thumb{
 
     .header .header-1 .search-form.active{
         top: 115%;
+    }
+
+    .home .row .books-slider .stand{ 
+        width: 100%;
+        margin-top: -3rem;
+        margin-left: -2rem;
+    }
+
+    .home .row .content{
+        text-align: center;
+    }
+
+    .home .row .content h3{
+        font-size: 3.5rem;
     }
 
 }
