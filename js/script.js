@@ -56,3 +56,35 @@ var swiper = new Swiper(".books-slider", {
       },
     },
   });
+
+var swiper = new Swiper(".featured-slider", {
+    spaceBetween: 10 ,
+    loop: true ,
+    centeredSlides: true ,
+    autoplay: {
+        delay: 9500 ,
+        disableOnInteraction: false ,
+    } ,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      } ,
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        // spaceBetween: 20,
+      },
+      450: {
+        slidesPerView: 2,
+        // spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 3,
+        // spaceBetween: 20,
+      },
+      1024: {
+        slidesPerView: 4,
+        // spaceBetween: 20,
+      },
+    },
+  });
